@@ -2,7 +2,7 @@
 <p>This is a web chat application for chat privately, create room add members to chat.</p>
 
 <% if current_user %>
-  <%= link_to 'Start chat', '#' %>
+  <%= link_to 'Start chat', rooms_path %>
   <%= button_to 'Sign out', destroy_user_session_path, method: :delete %>
 <% else %>
   <%= link_to 'Sign in', new_user_session_path %>
